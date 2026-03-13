@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main()
+{
+   /* char Alumno1[16]="Antonio";
+    char Alumno2[16];
+
+     printf("%s", Alumno1);
+    printf("Ingrese el nombre del alumno2 \n");
+    fgets(Alumno2, sizeof(Alumno2), stdin);
+    printf("%s", Alumno2);
+   */
+   int i, j, k, l;
+    char equipo[3][7];
+    
+    for (int i=0;i<3;i++)
+    {
+
+       printf("Ingrese el nombre del intengrante n%d \n",i+1);
+       fgets(equipo[i], sizeof(equipo), stdin);
+
+    }
+
+    for (int j=0;j<3;j++)
+    {
+                printf("\n El integrante numero %d es %s",j+1,equipo[j]);
+    }
+
+
+    return 0;
+}
